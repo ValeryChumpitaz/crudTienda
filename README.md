@@ -91,5 +91,3 @@ Este proyecto está orientado a la práctica y enseñanza de:
 Proyecto desarrollado por **[ValeryChumpitaz](https://github.com/ValeryChumpitaz)** 💻
 
 ```
-
----```
