@@ -92,8 +92,4 @@ Proyecto desarrollado por **[ValeryChumpitaz](https://github.com/ValeryChumpitaz
 
 ```
 
----
-
-👉 Te queda 100% **listo para copiar/pegar en tu README.md**.  
-¿Quieres que además te prepare unos **badges extra** (ejemplo: “status: en desarrollo”, “license MIT”, etc.) para darle un toque más profesional?
-```
+---```
