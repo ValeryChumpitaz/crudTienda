@@ -1,93 +1,108 @@
+# 🎯 Patrón MVC - Estructura del Proyecto
 
-# 🛒 CRUD Tienda – Java Swing + MySQL
+Este proyecto implementa el patrón de arquitectura **MVC** (Modelo - Vista - Controlador) para lograr una separación clara de responsabilidades, mejor mantenimiento y escalabilidad del sistema.
 
-![Java](https://img.shields.io/badge/Java-17-red?logo=openjdk)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql)
-![Swing](https://img.shields.io/badge/Swing-UI-green)
-![MVC](https://img.shields.io/badge/Pattern-MVC-orange)
+---
 
-Este proyecto implementa un sistema de **gestión para tienda** con **CRUD (Crear, Leer, Actualizar, Eliminar)** de entidades como **Productos, Clientes y Ventas**, aplicando el patrón de diseño **MVC** para mantener la separación de responsabilidades.  
-
-## ✨ Características
-- Conexión a **MySQL** usando JDBC.  
-- CRUD completo para entidades de la tienda.  
-- Interfaz gráfica desarrollada en **Java Swing**.  
-- Uso de **DAO + Service** para el acceso y la lógica de negocio.  
-- Arquitectura organizada en paquetes:  
-  - `modelo` → entidades y DAO  
-  - `servicio` → lógica de negocio  
-  - `vista` → interfaces Swing  
-  - `controlador` → control de flujos  
-  - `util` → conexión a la BD  
-
-## 🛠️ Tecnologías
-- **Java 17**  
-- **MySQL 8.0**  
-- **Swing (Java Desktop UI)**  
-- **JDBC**  
-
-## 📂 Estructura del Proyecto
-```plaintext
-src/
- └── tienda/
-      ├── modelo/
-      │    ├── Producto.java
-      │    ├── ProductoDAO.java
-      │    └── ...
-      ├── servicio/
-      │    └── ProductoService.java
-      ├── vista/
-      │    └── FrmProducto.java
-      ├── controlador/
-      │    └── ProductoController.java
-      └── util/
-           └── ConexionBD.java
-````
-
-## 🗄️ Script SQL
-
-Ejemplo de tabla `producto` en MySQL:
-
-```sql
-CREATE DATABASE tienda_db;
-USE tienda_db;
-
-CREATE TABLE producto (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
-    precio DECIMAL(10,2) NOT NULL,
-    stock INT NOT NULL
-);
-
-INSERT INTO producto (nombre, precio, stock) 
-VALUES 
-('Laptop', 2500.00, 10),
-('Mouse', 50.00, 100),
-('Teclado', 120.00, 50);
-```
-
-## 🚀 Ejecución
-
-1. Clonar el repositorio:
-
-   ```bash
-   git clone https://github.com/tuusuario/CRUD-Tienda.git
-   cd CRUD-Tienda
-   ```
-2. Importar el proyecto en **IntelliJ IDEA / Eclipse / NetBeans**.
-3. Configurar la conexión a MySQL en `util/ConexionBD.java`.
-4. Ejecutar la clase principal de la vista (`FrmProducto` o similar).
-
-## 📌 Objetivo del Proyecto
-
-Este proyecto está orientado a la práctica y enseñanza de:
-
-* Manejo de **Java Swing** para interfaces gráficas.
-* Conexión y manipulación de datos con **MySQL**.
-* Aplicación del patrón **MVC** en aplicaciones de escritorio.
-
-## 👩‍💻 Autor
-
-Proyecto desarrollado por **[ValeryChumpitaz](https://github.com/ValeryChumpitaz)** 💻
+## 🗂️ Estructura General
 
 ```
+
+📁 controller/
+📁 model/
+📁 service/
+📁 view/
+📁 resources/sql/
+
+```
+
+---
+
+## 🧩 ¿Qué es el patrón MVC?
+
+El patrón **MVC** divide una aplicación en tres componentes principales:
+
+| Componente   | Descripción                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| 🎮 Controlador (`controller/`) | Maneja las solicitudes del usuario y coordina las acciones entre el modelo y la vista. |
+| 🧠 Modelo (`model/`)        | Representa la lógica de datos del sistema. Se comunica con la base de datos.             |
+| 👁️ Vista (`view/`)         | Interfaz de usuario. Presenta los datos que recibe del controlador.                     |
+
+---
+
+## 📁 Descripción de Carpetas
+
+### 📂 `controller/`  
+📌 *Responsabilidad:*  
+Gestiona las peticiones del usuario y coordina las acciones del modelo y la vista.  
+🛠️ *Estado:* Agregar y Editar (actualizado la semana pasada)
+
+---
+
+### 📂 `model/`  
+📌 *Responsabilidad:*  
+Contiene las clases que representan la estructura de los datos.  
+📊 *Ejemplo:* Clases que mapean las tablas de la base de datos.  
+🛠️ *Estado:* Agregar y Editar (actualizado la semana pasada)
+
+---
+
+### 📂 `service/`  
+📌 *Responsabilidad:*  
+Encapsula la lógica del negocio. Actúa como puente entre el controlador y el modelo.  
+♻️ *Ventaja:* Permite reutilizar reglas de negocio sin duplicar código.  
+🛠️ *Estado:* Agregar y Editar (actualizado la semana pasada)
+
+---
+
+### 📂 `view/`  
+📌 *Responsabilidad:*  
+Muestra los datos al usuario de forma amigable. Puede contener archivos HTML, CSS, JS, etc.  
+🖥️ *Enlace visual entre el usuario y la aplicación.*  
+🛠️ *Estado:* Agregar y Editar (actualizado la semana pasada)
+
+---
+
+### 📂 `resources/sql/`  
+📌 *Responsabilidad:*  
+Contiene los scripts SQL necesarios para la creación y mantenimiento de la base de datos.  
+🗄️ *Incluye:* Scripts de inserción, migración y consultas.  
+🛠️ *Estado:* Agregar y Editar (actualizado la semana pasada)
+
+---
+
+## 📝 Últimas modificaciones
+
+📅 **Semana pasada**  
+Todas las carpetas mencionadas fueron actualizadas con funciones de **Agregar** y **Editar** para mejorar la funcionalidad del sistema.
+
+---
+
+## 🚀 Ventajas de usar MVC
+
+- 🔄 Separación clara de responsabilidades
+- 🔧 Facilita el mantenimiento y pruebas
+- 📦 Favorece la reutilización de componentes
+- 🧪 Mejora la calidad del código y permite mayor escalabilidad
+
+---
+
+## ✅ Recomendaciones
+
+- Mantén la lógica de negocio fuera del controlador.
+- Usa servicios para centralizar reglas complejas.
+- Actualiza los modelos si cambian las estructuras de datos.
+- Reutiliza vistas para mantener una UI coherente.
+
+
+---
+
+## 👩‍💻 Autora
+
+Desarrollado con 💙 por **Valery**  
+🎓 *Monitora de Análisis de Sistemas Empresariales*  
+Apasionada por la **arquitectura de software**, la **programación limpia** y la aplicación de **buenas prácticas** en el desarrollo de soluciones eficientes y sostenibles.
+
+📚 Convencida de que el conocimiento no tiene límites, siempre en constante aprendizaje y con el firme propósito de mejorar cada línea de código escrita.
+
+✨ *"El código bien hecho no solo funciona, también se entiende y se disfruta."*
