@@ -11,7 +11,7 @@ public class ConexionBD {
 
     private static final String URL = "jdbc:mysql://localhost:3306/bd_tienda";
     private static final String USER =  "root";
-    private static final String PASS = "Valery2025";
+    private static final String PASS = "valery2025";
 
     public static Connection getConexion() {
         Connection con = null;
