@@ -13,14 +13,14 @@ public class ConexionBD {
     private static final String USER =  "root";
     private static final String PASS = "Valery2025";
 
-    public static Connection getConnection(){
-        Connection conn = null;
+    public static Connection getConexion() {
+        Connection con = null;
         try {
-            conn = DriverManager.getConnection(URL,USER,PASS);
-            System.out.println("Conexion exitosa a la BD");
-        } catch (Exception e){
-            System.out.println("Error en la conexion: " + e.getMessage());
+            con = DriverManager.getConnection(URL, USER, PASS);
+            System.out.println(" Conexión exitosa a la BD");
+        } catch (Exception e) {
+            System.out.println("Error en la conexión: " + e.getMessage());
+        }
+        return con;
     }
-        return conn;
-}
 }
