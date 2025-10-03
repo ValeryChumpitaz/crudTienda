@@ -9,10 +9,8 @@ import java.util.List;
 public class ProductoDAO {
 
     private static final String SQL_SELECT = "SELECT id, nombre, precio, stock FROM producto";
-    private static final String SQL_SELECT_BY_ID = "SELECT id, nombre, precio, stock FROM producto WHERE id = ?";
     private static final String SQL_INSERT = "INSERT INTO producto (nombre, precio, stock) VALUES (?, ?, ?)";
     private static final String SQL_UPDATE = "UPDATE producto SET nombre = ?, precio = ?, stock = ? WHERE id = ?";
-    private static final String SQL_DELETE = "DELETE FROM producto WHERE id = ?";
 
     // Listar todos
     public List<Producto> listar() {
@@ -35,4 +33,36 @@ public class ProductoDAO {
         }
         return lista;
     }
+
+    public boolean agregar(Producto producto) {
+        try (Connection con = ConexionBD.getConexion();
+             PreparedStatement ps = con.prepareStatement(SQL_INSERT)) {
+
+            ps.setString(1, producto.getNombre());
+            ps.setDouble(2, producto.getPrecio());
+            ps.setInt(3, producto.getStock());
+            return ps.executeUpdate() > 0;
+
+        } catch (SQLException e) {
+            System.err.println("Error en agregar(): " + e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean actualizar(Producto producto) {
+        try (Connection con = ConexionBD.getConexion();
+             PreparedStatement ps = con.prepareStatement(SQL_UPDATE)) {
+
+            ps.setString(1, producto.getNombre());
+            ps.setDouble(2, producto.getPrecio());
+            ps.setInt(3, producto.getStock());
+            ps.setInt(4, producto.getId());
+            return ps.executeUpdate() > 0;
+
+        } catch (SQLException e) {
+            System.err.println("Error en actualizar(): " + e.getMessage());
+            return false;
+        }
+    }
 }
+
