@@ -1,6 +1,5 @@
 package vallegrade.edu.pe.service;
 
-
 import vallegrade.edu.pe.model.Producto;
 import vallegrade.edu.pe.model.ProductoDAO;
 
@@ -11,5 +10,12 @@ public class ProductoService {
 
     public List<Producto> obtenerProductos() {
         return dao.listar();
+    }
+
+    public boolean agregarProducto(Producto p){
+        return dao.agregar(p);
+    }
+    public boolean actualizarProducto(Producto p){
+        return dato.actualizar(p);
     }
 }
