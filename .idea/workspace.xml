@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bd3d60e-8511-4c5d-ad7e-bf8d6eeee304" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/ProductoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/ProductoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/ProductoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmProducto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/AppLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/TaskController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/database/ConexionBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/TaskDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/resources/sql/taskdb_and_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/resources/sql/taskdb_and_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/TaskService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/TaskView.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/UsuarioDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmConstruccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/database/ConexionBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/database/ConexionBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/ProductoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/ProductoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/ProductoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmProducto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.AppLauncher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -89,6 +93,8 @@
       <updated>1759266638811</updated>
       <workItem from="1759266640803" duration="1772000" />
       <workItem from="1759323823703" duration="2211000" />
+      <workItem from="1762112988487" duration="2935000" />
+      <workItem from="1762270174202" duration="2055000" />
     </task>
     <servers />
   </component>
