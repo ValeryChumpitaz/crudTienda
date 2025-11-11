@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bd3d60e-8511-4c5d-ad7e-bf8d6eeee304" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/UsuarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/UsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmConstruccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/controller/ProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/database/ConexionBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/database/ConexionBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/ProductoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/model/ProductoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/service/ProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vallegrade/edu/pe/view/FrmProducto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +35,7 @@
     &quot;Application.AppLauncher.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
@@ -94,7 +81,10 @@
       <workItem from="1759266640803" duration="1772000" />
       <workItem from="1759323823703" duration="2211000" />
       <workItem from="1762112988487" duration="2935000" />
-      <workItem from="1762270174202" duration="2055000" />
+      <workItem from="1762270174202" duration="2934000" />
+      <workItem from="1762390228421" duration="68000" />
+      <workItem from="1762710620618" duration="1006000" />
+      <workItem from="1762721714755" duration="73000" />
     </task>
     <servers />
   </component>
